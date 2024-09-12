@@ -1,9 +1,7 @@
-const API_KEY="b855512bf46a41c09c4400234a120917"
+// const API_kEY=here you paste our api_key
 const URL="https://newsapi.org/v2/everything?q="
-
 //window load per fetchNews function call hoga
 window.addEventListener('load',()=>fetchNews("India"))
-
 function homestate(){
     window.location.reload();
 }
