@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-app</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="homestate()">
+                <img src="./break.png" alt="image" width="110px" height="100px"> 
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-links-hover" id="weather" onclick="onNavclick(id)">WEATHER</li>
+                    <li class="nav-links-hover" id="ipl" onclick="onNavclick(id)">IPL</li>
+                    <li class="nav-links-hover" id="politics" onclick="onNavclick(id)">POLITICS</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-input" class="search-input" type="text" placeholder="e.g.weather">
+                <button class="search-button" id="search-button">search</button>
+            </div>
+        </div>
+    </nav>
+    <div class="blank"></div>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+        <template class="template-card-container" id="template-card-container" >
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://placehold.co/400x200"   placeholder="image" id="news-img">
+                    <!-- <img 
+                    src="./tacos_and_drink_400x267.png"   placeholder="image"> -->
+                </div>
+                <div class="card-content">
+                    <h3 class="news-title" id="news-title">this is title</h3>
+                    <h5 class="news-source" id="news-source">hello</h5>
+                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis reiciendis possimus ex suscipit deserunt accusantium labore debitis rerum maxime, reprehenderit illo quia facere deleniti voluptate sunt eveniet iusto officia nihil.</p>
+                </div>
+            </div>
+        </template>
+    </main>
+    
+</body>
+ <script src="./new.js"></script>
+</html>
